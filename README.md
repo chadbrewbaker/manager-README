@@ -12,7 +12,7 @@ Sometimes that is interfacing with other teams, sometimes that is researching te
 I love feedback both positive and negative, good teams have honest constructive communication. Anonymous feedback is fine but please encrypt it client side using my public RSA key if it contains anything sensitive and put ANONYMOUS FEEDBACK in the header so I don't ignore it as SPAM. 
 
 ```bash
-openssl rsautl -encrypt -pubin -inkey chads_key.pem.pub -ssl -in myMessage.txt -out myEncryptedMessage.txt
+openssl rsautl -encrypt -pubin -inkey chads_pub_key.pem  -ssl -in myMessage.txt -out myEncryptedMessage.txt
 ```
 I especially crave feedback on how well our team is providing business value. The [business model canvas](https://strategyzer.com/canvas/business-model-canvas) is a tool I find helpful for this.  
 
